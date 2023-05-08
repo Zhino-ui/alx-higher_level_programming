@@ -1,0 +1,7 @@
+#include "lists.h"
+
+/*
+ check_cycle - checks cycle
+@list: linked list
+Return: value
+
