@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-i = 0
-for x in range(ord("Z"), ord("a") - 1, -1):
-    print("{}".format(chr(x - i)), end="")
-    i = 32 if i ==0 else 0
+ofr x in range(ord("z"), ord("a")-1, -1):
+    print("{:c}".format(x) if x %2 == 0 else chr(x - 32), end="")
