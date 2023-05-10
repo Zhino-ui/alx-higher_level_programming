@@ -10,4 +10,4 @@ if dig > 5:
 elif dig == 0:
     print("Last digit of {} is {} and is 0".format(number, dig))
 else:
-    print("Last digit of {} is {} and is less than 6 and not 0".format(number, dig))
+    print("Last digit of {} is {} and is less than 6 and not 0"\n.format(number, dig))
