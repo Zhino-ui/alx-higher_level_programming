@@ -8,7 +8,7 @@ else:
 if dig > 5:
     print("Last digit of {} is {} and is greater than 5"
             .format(number, dig))
-elif dig is 0:
+elif dig == 0:
     print("Last digit of {} is {} nad is 0"
             .format(number, dig))
 else:
