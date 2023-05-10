@@ -2,12 +2,12 @@
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-    dig = number % (-10)
+    digit = number % (-10)
 else:
-    dig = number % 10
-if dig > 5:
-    print("Last digit of {} is {} and is greater than 5".format(number, dig))
-elif dig == 0:
-    print("Last digit of {} is {} and is 0".format(number, dig))
+    digit = number % 10
+if digit > 5:
+    print("Last digit of {} is {} and is greater than 5".format(number, digit))
+elif digit == 0:
+    print("Last digit of {} is {} and is 0".format(number, digit))
 else:
-    print("Last digit of {} is {} and is less than 6 and not 0"\n.format(number, dig))
+    print("Last digit of {} is {} and is less than 6 and not 0".format(number, digit))
