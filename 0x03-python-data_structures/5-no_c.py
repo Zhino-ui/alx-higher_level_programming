@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
 def no_c(my_string):
-    cp = [k for k in my_string if k != 'c' and k != 'C']
-    return ("".join(cp))
+    new_string = ""
+    for char in my_string:
+        if char.lower() != 'c':
+            new_string += char
+    return new_string
