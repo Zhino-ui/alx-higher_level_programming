@@ -2,15 +2,8 @@
 
 if __name__ == "__main__":
     from sys import argv
-    import sys
-
-    counter = len(sys.argv) - 1
-    if counter == 0:
-        print("0 arguments.")
-    elif counter == 1:
-        print("1 argument:")
-    else:
-        print("{} argumaents:".format(counter))
-    for x in range(counter):
-        print("{}:{}".format(x + 1, sys.argv[x + 1]))
-
+    user = argv[1:]
+    size = len(user)
+    print("{:d} {:s}{:s}".format(size, "arguments" if (size) is not 1 else "argument", "." if (size) is 0 else ":"))
+    for idx, arg in enumerate(user):
+        print("{:d}: {:s}".format(idx + 1, arg))
